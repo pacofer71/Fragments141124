@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.FragmentMenu">
+
+    <ImageView
+        android:id="@+id/iv_gears"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/gears"
+        app:layout_constraintEnd_toStartOf="@id/iv_linterna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_linterna"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/linterna"
+        app:layout_constraintEnd_toStartOf="@id/iv_musica"
+        app:layout_constraintStart_toEndOf="@id/iv_gears"
+        app:layout_constraintTop_toTopOf="@+id/iv_gears" />
+
+    <ImageView
+        android:id="@+id/iv_musica"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/musica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_linterna"
+        app:layout_constraintTop_toTopOf="@+id/iv_linterna" />
+</androidx.constraintlayout.widget.ConstraintLayout>
